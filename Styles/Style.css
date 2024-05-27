@@ -427,7 +427,7 @@ audio {
 }
 
 /*# sourceMappingURL=Style.css.map */
-
+/* En este media query se definen los cambios de estilos que se deben hacer después del break point */
 @media screen and (max-width: 480px) {
 
   .navBar-container {
