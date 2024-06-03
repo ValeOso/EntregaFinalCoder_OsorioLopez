@@ -101,6 +101,10 @@
 .intro-container,
 .cifras-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px 280px 10px 280px;
 }
 
@@ -109,6 +113,12 @@
   color: #002896;
   font-size: 24px;
   font-weight: 500;
+}
+
+.intro-container iframe {
+  width: 100%;
+  max-width: 960px;
+  min-height: 350px;
 }
 
 .img-container {
@@ -428,7 +438,7 @@ audio {
 
 /*# sourceMappingURL=Style.css.map */
 /* En este media query se definen los cambios de estilos que se deben hacer después del break point */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
 
   .navBar-container {
     height: auto;
@@ -496,7 +506,6 @@ audio {
     text-align: center;
   }
 
-
   .cifras-container {
     margin-top: 20px;
     width: 100%;
@@ -518,7 +527,6 @@ audio {
 
   .intro-container iframe {
     width: 90vw;
-    height: auto;
   }
 
   .img-container img {
@@ -540,7 +548,6 @@ audio {
     margin: 20px 0 0 0;
     padding: 20px 10px 20px 10px;
   }
-
 
   .footer-container h2 {
     font-size: 16px;
@@ -564,6 +571,47 @@ audio {
   .landing-container div #text1 {
     padding: 10px 0 0 0;
   }
+}
 
+@media screen and (max-width: 990px) {
+
+  .landing-container img {
+    width: 270px;
+  }
+
+  .landing-container div #text1 span {
+    font-size: 30px;
+  }
+
+  .landing-container div #text1 {
+    font-size: 25px;
+  }
+
+  .landing-container div #text1 span {
+    font-size: 30px;
+  }
+
+  .landing-container div #text2 {
+    width: 350px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .landing-container div #text3 {
+    height: 40px;
+    font-size: 15px;
+    width: 200px;
+  }
+
+}
+
+
+@media screen and (max-width: 1366px) {
+
+  .intro-container {
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+  }
 
 }
