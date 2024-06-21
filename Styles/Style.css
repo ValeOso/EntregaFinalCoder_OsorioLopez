@@ -121,6 +121,11 @@
   min-height: 350px;
 }
 
+.intro-container img {
+  max-width: 80%;
+  height: auto;
+}
+
 .img-container {
   display: flex;
   justify-content: center;
@@ -226,6 +231,7 @@ audio {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 90%;
 }
 
 .main-container .right .video p {
@@ -246,10 +252,14 @@ audio {
 
 .image-slider-container {
   display: flex;
-  width: 100%;
-  margin-bottom: 140px;
+  width: 100vw;
+  margin-bottom: 40px;
   justify-content: center;
   align-items: center;
+}
+
+.image-slider-container div {
+  max-width: 90%;
 }
 
 .image-slider-container .image {
@@ -440,6 +450,29 @@ audio {
 /* En este media query se definen los cambios de estilos que se deben hacer después del break point */
 @media screen and (max-width: 720px) {
 
+  .main-container {
+    padding: 0 2rem 0 2rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-container .right {
+    width: 100%;
+  }
+
+  .main-container .right .video {
+    width: 100%;
+  }
+
+
+  .main-container .right .video iframe {
+    width: 100%;
+  }
+
+  audio {
+    margin: 0px 0px 0px 12px;
+  }
+
   .navBar-container {
     height: auto;
     min-height: 70px;
@@ -553,7 +586,7 @@ audio {
     font-size: 16px;
     text-align: center;
   }
-  
+
   .footer-container p {
     font-size: 12px;
     text-align: center;
@@ -574,6 +607,18 @@ audio {
 }
 
 @media screen and (max-width: 990px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .main-container .right .video iframe {
+    width: 100%;
+  }
+
+
+  audio {
+    margin: 0px 0px 0px 12px;
+  }
 
   .landing-container img {
     width: 270px;
